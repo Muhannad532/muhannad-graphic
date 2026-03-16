@@ -5,26 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مهند جرافيك</title>
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; background-color: #000; }
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            width: 100%; 
+            overflow: hidden; 
+            background-color: #000; 
+        }
         .background {
+            /* التعديل هنا: 100% 100% تجعل الصورة تظهر كاملة مهما كان طول الجوال */
             background: url('bg.png') no-repeat center center;
-            background-size: contain;
-            width: 100%; height: 100vh; position: relative;
+            background-size: 100% 100%; 
+            width: 100%; 
+            height: 100vh; 
+            position: relative;
         }
         .link-box {
             position: absolute;
-            width: 75%; height: 60px; left: 12.5%;
+            width: 75%; 
+            height: 7%; /* جعلنا الطول بالنسبة المئوية ليتناسب مع الصورة الكاملة */
+            left: 12.5%;
             display: block;
-            border: 2px solid transparent; /* مخفي */
+            border: 2px solid red; /* اترك الأحمر الآن لتتأكد من المكان ثم احذفه */
             z-index: 1000;
         }
     </style>
 </head>
 <body>
     <div class="background">
-        <a href="https://wa.me/966534636856" class="link-box" style="top: 22%;"></a>
-        <a href="https://www.tiktok.com/@by.muhannad1" class="link-box" style="top: 27%;"></a>
-        <a href="https://www.instagram.com/by.muhannad1" class="link-box" style="top: 32%;"></a>
+        <a href="https://wa.me/966534636856" class="link-box" style="top: 45%;"></a>
+        
+        <a href="https://www.tiktok.com/@by.muhannad1" class="link-box" style="top: 55%;"></a>
+        
+        <a href="https://www.instagram.com/by.muhannad1" class="link-box" style="top: 65%;"></a>
     </div>
 </body>
 </html>
