@@ -5,42 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مهند جرافيك | Muhannad Graphic</title>
     <style>
-        body, html { 
-            margin: 0; 
-            padding: 0; 
-            height: 100%; 
-            width: 100%;
-            overflow: hidden; 
-            background-color: #000; 
-        }
+        body, html { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; background-color: #000; }
         .background {
             background: url('bg.png') no-repeat center center;
-            background-size: contain; /* يضمن ظهور تصميمك كاملاً دون قص */
+            background-size: contain;
             width: 100%;
             height: 100vh;
             position: relative;
-            margin: 0 auto;
         }
-        /* تصميم مربع الضغط */
+        /* المربعات الحمراء - تأكد من وجود هذا الجزء */
         .link-box {
             position: absolute;
-            width: 60%; /* يمكنك تغيير العرض من هنا */
-            height: 55px; /* يمكنك تغيير الطول من هنا */
-            left: 20%;   /* لتوسيط المربع في الشاشة */
+            width: 70%;
+            height: 60px;
+            left: 15%;
             display: block;
-            border: 2px solid red; /* اترك هذا السطر حتى توازن الأماكن ثم احذفه */
+            border: 3px solid red !important; /* سيظهر برواز أحمر سميك للوزن */
+            z-index: 999;
         }
     </style>
 </head>
 <body>
     <div class="background">
+        <a href="https://wa.me/966534636856" class="link-box" style="top: 15%;"></a>
         
-        <a href="https://wa.me/966534636856" class="link-box" style="top: 25%;"></a>
+        <a href="https://www.instagram.com/by.muhannad1" class="link-box" style="top: 25%;"></a>
         
-        <a href="https://www.instagram.com/by.muhannad1?igsh=MWdwaXdudmhodzl1ZQ%3D%3D&utm_source=qr" class="link-box" style="top: 35%;"></a>
-        
-        <a href="https://www.tiktok.com/@by.muhannad1?is_from_webapp=1&sender_device=pc" class="link-box" style="top: 45%;"></a>
-
+        <a href="https://www.tiktok.com/@by.muhannad1" class="link-box" style="top: 35%;"></a>
     </div>
 </body>
 </html>
